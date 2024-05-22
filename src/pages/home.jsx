@@ -101,6 +101,7 @@ const Home = () => {
       // Hide the response after 3 seconds and allow sending again
       setTimeout(() => {
         setBackendResponse([]);
+        console.log("finally");
         setSending(false); // Allow sending again after the response is hidden
       }, 3000);
     }
